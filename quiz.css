@@ -17,6 +17,7 @@ body {
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Added padding for better spacing */
 }
 
 .btn-grid {
@@ -55,26 +56,43 @@ body {
     border-radius: 25px;
 }
 
-footer {
-    margin-top: auto;
-}
-
-.correct {
-    background-color: #28a745;
-    color: white;
-}
-
-.wrong {
-    background-color: #dc3545;
-    color: white;
-}
-
+/* Feedback styles */
 #feedback {
     font-size: 1.1rem;
     font-weight: bold;
 }
 
+/* Score container styles */
 #score-container {
     font-size: 1.2rem;
-    color: #007bff;
+    color: #007bff; /* Blue color for score text */
+}
+
+/* Correct and wrong answer styles */
+.correct {
+    background-color: #28a745; /* Green background for correct answers */
+    color: white; /* White text for better readability */
+}
+
+.wrong {
+    background-color: #dc3545; /* Red background for wrong answers */
+    color: white; /* White text for better readability */
+}
+
+/* Additional styling for buttons in feedback messages */
+.alert-success {
+   background-color:#d4edda; /* Light green background for success messages */
+   border-color:#c3e6cb; /* Green border for success messages */
+   color:#155724; /* Dark green text for success messages */
+}
+
+.alert-danger {
+   background-color:#f8d7da; /* Light red background for error messages */
+   border-color:#f5c6cb; /* Red border for error messages */
+   color:#721c24; /* Dark red text for error messages */
+}
+
+/* Footer styling */
+footer {
+   margin-top:auto; /* Push footer to the bottom of the page */
 }
