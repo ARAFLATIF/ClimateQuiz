@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f7ef;
+}
+
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #c8e6c9; /* Light green for odd rows */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #f1f8e9; /* Very light green for even rows */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #81c784; /* Darker green on hover */
+}
+
+.table th {
+    background-color: #388e3c; /* Dark green for header */
+    color: white;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Animation for new entries */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

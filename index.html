@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimateQuiz - Protect Our Planet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="climate.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ClimateQuiz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quiz.html">Quizzes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="challenges.html">Challenges</a></li>
+                    <li class="nav-item"><a class="nav-link" href="leaderboard.html">Leaderboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="hero-overlay">
+            <div class="container">
+                <h1 data-aos="fade-up" class="display-3 text-white mb-4">
+                    Climate Change Starts with Knowledge
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="200" class="lead text-white mb-5">
+                    Discover. Learn. Take Action. Transform your understanding of our planet's future.
+                </p>
+                <div data-aos="zoom-in" data-aos-delay="300">
+                    <a href="#" class="btn btn-primary btn-lg me-3">Take a Quiz</a>
+                    <a href="#" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="feature-box">
+                        <div class="feature-icon mb-3">🌍</div>
+                        <h3>Interactive Learning</h3>
+                        <p>Engage with dynamic quizzes that make climate education exciting and accessible.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="feature-box">
+                        <div class="feature-icon mb-3">📊</div>
+                        <h3>Track Your Impact</h3>
+                        <p>Monitor your progress and see how your knowledge contributes to global awareness.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="feature-box">
+                        <div class="feature-icon mb-3">🏆</div>
+                        <h3>Community Challenges</h3>
+                        <p>Compete with others and earn badges while learning about sustainability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 ClimateQuiz. Empowering Change, One Quiz at a Time.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="climate.js"></script>
+</body>
+</html>

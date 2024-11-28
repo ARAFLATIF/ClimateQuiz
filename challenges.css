@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f7ef;
+}
+
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: auto;
+}
+
+.challenge-card {
+    margin-bottom: 20px;
+}
+
+.challenge-title {
+    font-size: 1.5rem;
+}
+
+.challenge-description {
+    font-size: 1rem;
+}
+
+/* Additional styles for button */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Styles for the refresh button */
+#refresh-btn {
+    background-color: #007bff;
+}
+
+#refresh-btn:hover {
+    background-color: #0056b3;
+}
