@@ -55,11 +55,16 @@ function resetState() {
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
-    setStatusClass(document.body, correct);
+
+    // Set status for selected answer
+    setStatusClass(selectedButton, correct);
+
+    // Highlight the correct answer regardless of user's choice
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
-        button.disabled = true;
+        button.disabled = true; // Disable all buttons after selection
     });
+
     if (correct) {
         score += 10;
         feedbackElement.textContent = "Correct! Well done!";
@@ -68,8 +73,10 @@ function selectAnswer(e) {
         feedbackElement.textContent = "Sorry, that's incorrect. The correct answer is highlighted in green.";
         feedbackElement.className = "alert alert-danger";
     }
+
     feedbackElement.style.display = 'block';
     updateScore();
+
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
@@ -81,9 +88,10 @@ function selectAnswer(e) {
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
-        element.classList.add('correct');
+        element.classList.add('correct'); // Class for correct answers
+        element.classList.add('bg-success', 'text-white'); // Optional: Add background color for visibility
     } else {
-        element.classList.add('wrong');
+        element.classList.add('wrong'); // Class for wrong answers
     }
 }
 
@@ -180,9 +188,9 @@ const questions = [
         question: 'How much carbon dioxide does an average American add to the atmosphere annually?',
         answers: [
             { text: '6 metric tons', correct: false },
-            { text: '16 metric tons', correct: true },
-            { text: '25 metric tons', correct: false },
-            { text: '10 metric tons', correct: false }
-        ]
-    }
+            { text: '16 metric tons', correct:true},
+            { text:'25 metric tons' ,correct:false},
+             {text:'10 metric tons' ,correct:false}
+         ]
+     }
 ];
