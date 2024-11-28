@@ -56,13 +56,11 @@ function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
 
-    // Set status for selected answer
     setStatusClass(selectedButton, correct);
 
-    // Highlight the correct answer regardless of user's choice
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
-        button.disabled = true; // Disable all buttons after selection
+        button.disabled = true; 
     });
 
     if (correct) {
@@ -88,10 +86,10 @@ function selectAnswer(e) {
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
-        element.classList.add('correct'); // Class for correct answers
-        element.classList.add('bg-success', 'text-white'); // Optional: Add background color for visibility
+        element.classList.add('correct'); 
+        element.classList.add('bg-success', 'text-white'); 
     } else {
-        element.classList.add('wrong'); // Class for wrong answers
+        element.classList.add('wrong'); 
     }
 }
 
