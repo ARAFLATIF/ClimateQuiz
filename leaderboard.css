@@ -13,19 +13,19 @@ body {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #c8e6c9; /* Light green for odd rows */
+    background-color: #c8e6c9; 
 }
 
 .table-striped tbody tr:nth-of-type(even) {
-    background-color: #f1f8e9; /* Very light green for even rows */
+    background-color: #f1f8e9; 
 }
 
 .table-hover tbody tr:hover {
-    background-color: #81c784; /* Darker green on hover */
+    background-color: #81c784; 
 }
 
 .table th {
-    background-color: #388e3c; /* Dark green for header */
+    background-color: #388e3c; 
     color: white;
 }
 
@@ -33,7 +33,6 @@ footer {
     margin-top: auto;
 }
 
-/* Animation for new entries */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
